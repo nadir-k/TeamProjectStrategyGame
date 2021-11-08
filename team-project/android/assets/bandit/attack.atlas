@@ -1,0 +1,12 @@
+attack.png
+size: 307, 55
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+attack
+  rotate: false
+  xy: 1, 1
+  size: 305, 53
+  orig: 320, 53
+  offset: 2, 0
+  index: -1

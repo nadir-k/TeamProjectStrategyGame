@@ -1,0 +1,48 @@
+
+Players.png
+size: 2048,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+1
+  rotate: false
+  xy: 2, 2
+  size: 510, 60
+  orig: 510, 60
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1331, 74
+  size: 363, 50
+  orig: 363, 50
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 514, 6
+  size: 380, 56
+  orig: 380, 56
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 965, 74
+  size: 364, 50
+  orig: 364, 50
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 584, 64
+  size: 379, 60
+  orig: 379, 60
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 2, 64
+  size: 580, 60
+  orig: 580, 60
+  offset: 0, 0
+  index: -1

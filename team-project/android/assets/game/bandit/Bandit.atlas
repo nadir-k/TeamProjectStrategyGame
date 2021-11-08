@@ -1,0 +1,27 @@
+
+Bandit.png
+size: 1024,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+attack
+  rotate: false
+  xy: 2, 2
+  size: 380, 60
+  orig: 380, 60
+  offset: 0, 0
+  index: -1
+dead
+  rotate: false
+  xy: 574, 60
+  size: 390, 64
+  orig: 390, 64
+  offset: 0, 0
+  index: -1
+stand
+  rotate: false
+  xy: 2, 64
+  size: 570, 60
+  orig: 570, 60
+  offset: 0, 0
+  index: -1

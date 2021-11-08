@@ -1,0 +1,12 @@
+dead.png
+size: 359, 53
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dead
+  rotate: false
+  xy: 1, 1
+  size: 357, 51
+  orig: 377, 53
+  offset: 16, 0
+  index: -1

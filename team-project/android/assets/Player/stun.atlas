@@ -1,0 +1,12 @@
+stun.png
+size: 365, 52
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+stun
+  rotate: false
+  xy: 1, 1
+  size: 363, 50
+  orig: 363, 50
+  offset: 0, 0
+  index: -1

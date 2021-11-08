@@ -1,0 +1,77 @@
+apply plugin: "java"
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'pmd'
+apply plugin: 'jacoco'
+
+sourceCompatibility = 1.7
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/main/" ]
+
+checkstyle {
+	configFile file('../app/code_quality_tools/checkstyle-google.xml')
+	toolVersion = "8.0"
+	ignoreFailures = true
+	showViolations = false
+}
+
+findbugs {
+    ignoreFailures = true
+	excludeFilter = file("$rootProject.rootDir/app/code_quality_tools/findbugs-exclude.xml")
+}
+
+pmd {
+	ignoreFailures = true
+	//ruleSetFiles = files("${project.rootDir}/app/code_quality_tools/pmd-rules.xml")
+	consoleOutput = false
+}
+
+jacoco {
+    toolVersion = "0.8.5"
+    reportsDir = file("$project.buildDir/reports/jacoco")
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination file("$project.buildDir/reports/jacoco/jacocoHtml")
+        xml.destination file("$project.buildDir/reports/jacoco/jacoco.xml")
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+test {
+    jacoco {
+        enabled = true
+        destinationFile = file("$project.buildDir/jacoco/jacocoTest.exec")
+        classDumpDir = file("$project.buildDir/jacoco/classpathdumps")
+    }
+}
+
+

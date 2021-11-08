@@ -1,0 +1,27 @@
+
+Zuzzannah.png
+size: 2048,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+attack
+  rotate: false
+  xy: 2, 2
+  size: 1040, 60
+  orig: 1040, 60
+  offset: 0, 0
+  index: -1
+dead
+  rotate: false
+  xy: 1626, 2
+  size: 390, 60
+  orig: 390, 60
+  offset: 0, 0
+  index: -1
+standing
+  rotate: false
+  xy: 1044, 2
+  size: 580, 60
+  orig: 580, 60
+  offset: 0, 0
+  index: -1

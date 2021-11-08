@@ -1,0 +1,12 @@
+stand.png
+size: 31, 54
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+stand
+  rotate: false
+  xy: 1, 1
+  size: 29, 52
+  orig: 40, 53
+  offset: 4, 0
+  index: -1

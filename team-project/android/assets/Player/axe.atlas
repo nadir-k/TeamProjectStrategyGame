@@ -1,0 +1,12 @@
+axe.png
+size: 295, 55
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+axeAttack
+  rotate: false
+  xy: 1, 1
+  size: 293, 53
+  orig: 320, 53
+  offset: 1, 0
+  index: -1
